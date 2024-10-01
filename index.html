@@ -57,11 +57,7 @@
     </header>
 
     <!--Left Sidebar for Duck Gifs-->
-    <aside id="leftBar" class="sidebar">
-        <img src="#" alt="Duck Gif 1">
-        <img src="#" alt="Duck Gif 2">
-        <img src="#" alt="Duck Gif 3">
-    </aside>
+
 
     <!-- Right Sidebar for cart and system requirements
     <aside id="rightBar" class="sidebar">
@@ -75,22 +71,27 @@
 
 
     <!--Hero-->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>DUCK</h1>
-            <p class="tagline">Tagline here</p>
-            <a href="#" class="buy-now-button">Add to cart</a>
-        </div>
+    <main id="mainContent">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>DUCK</h1>
+                <p class="tagline">Tagline here</p>
+                <a href="#" class="buy-now-button">Add to cart</a>
+            </div>
 
-        <div class="hero-pic">
-            <img src="./images/ducklogo.png" alt="duck image">
-        </div>
-    </section>
+            <div class="hero-pic">
+                <img src="./images/ducklogo.png" alt="duck image">
+            </div>
+            <aside id="leftBar" class="sidebar">
+                <img class="duck=placeholder"src="./images/ducklogo.png" alt="Duck Gif 1">
+                <img class="duck=placeholder" src="./images/ducklogo.png" alt="Duck Gif 2">
+                <img class="duck=placeholder" src="./images/ducklogo.png" alt="Duck Gif 3">
+            </aside>
+        </section>
 
     <!--Main Content-->
-    <main id="mainContent">
+    
         <section id="product">
-            <h1>Duck</h1>
             <div class="duck-container">
                 <img id="duckImage" src="duck.png" alt="Rubber Duck">
                 <div class="color-chooser">
@@ -117,16 +118,21 @@
 
         <!--Contact Info-->
         <footer id="contact">
-            <h2>Contact Me</h2>
-            <form>
+            <h3>Connect</h3>
+                <ul id="socialmedia">
+                    <li id="insta"><a href="#" id="insta-link">Instagram</a></li>
+                    <li id="twitter"><a href="#" id="twitter-link">Twitter</a></li>
+                </ul>
+            <h5 id="footer-tag">© Ducks 2024</h5>
+            <!-- <form>
                 <input type="text" placeholder="Your Name">
                 <input type="email" placeholder="Your Email">
                 <textarea placeholder="Your Message"></textarea>
                 <button type="submit">Submit</button>
-            </form>
+            </form> -->
         </footer>
 
-        <!--Sign In-->
+        <!-- Sign In
         <div id="signInModal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
@@ -139,7 +145,7 @@
             </div>
         </div>
 
-        <!--Cart-->
+        Cart
         <div id="cartModal" class="modal"></div>
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -148,7 +154,7 @@
                 <p>Your cart is empty.</p>
             </div>
         </div>
-        </div>
+        </div> -->
 
 
 </body>
