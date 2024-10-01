@@ -78,7 +78,7 @@ header {
 
 .nav-links li {
     display: inline;
-    background-color: purple;
+    text-decoration: none;
 }
 
 .theme-btn {
