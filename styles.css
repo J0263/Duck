@@ -239,7 +239,8 @@ footer {
    
 }
 .product-info {
-    width: 300px;
+    height: 500px;
+    width: 500px;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -267,6 +268,7 @@ footer {
     font-weight: bold;
     color: #333;
     margin-bottom: 15px;
+    padding: 20px;
    }
    /* Color selection section */
    .product-colors {
@@ -309,7 +311,100 @@ footer {
   #add-to-cart-button:hover {
     background-color: #0056B3;
   }
-   .top-header {
+  .cart-container {
+    width: 30%;
+    height: 100vh;
+    position: fixed;
+    top: 152px;
+    right: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: -2px, 0, 5px, #0000;
+    transition: transform 0.3s ease;
+    border: 2px, solid, #444;
+}
+.cart-container.hide {
+    transform: translateX(100%); /* Slide the cart out of view */
+}
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.cart-header h2 {
+    font-size: 24px;
+    margin: 0;
+}
+.close-cart {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+cart-items {
+    flex: 1;
+    overflow-y: auto;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.cart-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+cart-item-info {
+    flex: 1;
+    margin-left: 15px;
+}
+.cart-item-price {
+    font-size: 18px;
+    font-weight: bold;
+}
+.cart-footer {
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#checkout-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.cart-subtotal {
+    font-size: 18px;
+    font-weight: bold;
+}
+.remove-from-cart {
+    background-color: red;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+.remove-from-cart:hover {
+    background-color: gold;
+}
+.top-header {
     background-color: #555;
     padding: 10px 20px;
     color: white;
@@ -499,4 +594,8 @@ nav {
 }
 .login-container {
     margin-right: 30px;
+}
+#duck-head{
+    height: 60px;
+    width: 60px;
 }

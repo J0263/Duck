@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <title>Duck</title>
+    <script defer src="./script.js"></script>
 </head>
 
 <body>
@@ -38,78 +39,51 @@
         </div>
     </div>
 
-    <!--Header Nav (Seth and Jorge)-->
-    <!-- <header>
-        <nav>
-            <div class="logo">
-                <img src="./images/ducklogo.png" alt="duck logo" />
-                <h1>DUCK</h1>
-            </div>
-
-            <ul class="nav-links">
-            <li><a href="#" id=products-btn>Products</a></li>
-            <li><a href="#" id=contact-me-btn>Contact Me</a></li>
-            <li><img src="./images/shoppingcart.jpg" id=cart-btn></li>
-            <li><a href="#" id="sign-in-btn">Sign In</a></li>
-        </ul>
-        </nav>
-    </header> -->
-
-    <!--Left Sidebar for Duck Gifs-->
-
-
-    <!-- Right Sidebar for cart and system requirements
-    <aside id="rightBar" class="sidebar">
-        <h2>Talk to the Duck</h2>
-        <p>Open mind</p>
-        <div id="duckPopUp">
-            <img src="#" alt="duck head">
-        </div>
-    </aside> -->
     <!--Header (Nav Jacks)-->
-    
-        <header class="top-header">
-            <div class="top-header-content">
-                <span class="newsletter-offer">
-                    <a href="#" class="newsletter-link">Sign up for our newsletter for 0.01% off!</a>
-                </span>
-                <div class="right-section">
-                    <label class="switch">
-                        <input type="checkbox" id="theme-switch">
-                        <span class="slider round"></span>
-                    </label>
-                    <a href="#" class="sign-in-link">Sign In</a>
-                </div>
+
+    <header class="top-header">
+        <div class="top-header-content">
+            <span class="newsletter-offer">
+                <a href="#" class="newsletter-link">Sign up for our newsletter for 0.01% off!</a>
+            </span>
+            <div class="right-section">
+                <label class="switch">
+                    <input type="checkbox" id="theme-switch">
+                    <span class="slider round"></span>
+                </label>
+                <a href="#" class="sign-in-link">Sign In</a>
             </div>
-        </header>
-        <header>
-            <nav>
-                <div class="main-nav">
-                    <span class="logo-container">
-                        <a href="#">
-                            <img src="../Duck Test/ImagesTemp/DuckLogo.png" alt="Logo" class="logo">
-                        </a>
-                    </span>
-                    <div class="shopping-cart-container">
-                        <a href="/path_to_your_cart_page">
-                            <img src="../Duck Test/ImagesTemp/ShoppingCart.png" alt="Shopping Cart" class="shopping-cart-icon">
-                        </a>
-                    </div>
-                    <span class="dropdown">
-                        <a href="#">Products</a>
-                        <div class="dropdown-content">
-                            <span class="product-category">
-                                <a href="#">Ducks</a>
-                                <div class="sub-dropdown">
-                                    <span><a href="#">Duck Product</a></span>
-                                </div>
-                            </span>
-                        </div>
-                    </span>
+        </div>
+    </header>
+    <header>
+        <nav>
+            <div class="main-nav">
+                <span class="logo-container">
+                    <a href="#">
+                        <img src="./ImagesTemp/DuckLogo.png" alt="Logo" class="logo">
+                    </a>
+                </span>
+                <div class="shopping-cart-container">
+                    <a href="/path_to_your_cart_page">
+                        <img src="./ImagesTemp/ShoppingCart.png" alt="Shopping Cart"
+                            class="shopping-cart-icon">
+                    </a>
                 </div>
-            </nav>
-        </header>
- 
+                <span class="dropdown">
+                    <a href="#">Products</a>
+                    <div class="dropdown-content">
+                        <span class="product-category">
+                            <a href="#">Ducks</a>
+                            <div class="sub-dropdown">
+                                <span><a href="#">Duck Product</a></span>
+                            </div>
+                        </span>
+                    </div>
+                </span>
+            </div>
+        </nav>
+    </header>
+
     <!--Hero-->
     <main id="mainContent">
         <section class="hero">
@@ -122,112 +96,81 @@
             <div class="hero-pic">
                 <img src="./images/ducklogo.png" alt="duck image">
             </div>
-            <aside id="leftBar" class="sidebar">
-                <img class="duck=placeholder"src="./images/ducklogo.png" alt="Duck Gif 1">
-                <img class="duck=placeholder" src="./images/ducklogo.png" alt="Duck Gif 2">
-                <img class="duck=placeholder" src="./images/ducklogo.png" alt="Duck Gif 3">
-            </aside>
-            
+            <!-- <aside id="leftBar" class="sidebar">
+                <img class="duck=placeholder" src="./ImagesTemp/BlueDuckProduct.jpeg" alt="Duck Gif 1">
+                <img class="duck=placeholder" src="./ImagesTemp/PinkDuckProduct.jpg" alt="Duck Gif 2">
+                <img class="duck=placeholder" src="./ImagesTemp/YellowDuckProduct.jpeg" alt="Duck Gif 3">
+            </aside> -->
+
         </section>
-        
-        <main aside class="product-info">
+
+ <!-- Product Details Section with Add to Cart Button -->
+        <aside class="product-info">
             <div class="product-price">
-              <p>Price: $49.99</p>
+                <p>Price: $49.99</p>
             </div>
             <div class="product-colors">
-              <p>Select Color:</p>
-              <select name="color" id="color-select">
-                <option value="red">Red</option>
-                <option value="blue">Blue</option>
-                <option value="green">Green</option>
-                <option value="yellow">Yellow</option>
-              </select>
+                <p>Select Color:</p>
+                <select name="color" id="color-select">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="yellow">Yellow</option>
+                </select>
             </div>
             <div class="product-description">
-              <p>This is a brief description of the product. It's a great choice for anyone looking for quality and style.</p>
+                <p>This is a brief description of the product. It's a great choice for anyone looking for quality and style.</p>
             </div>
-            <!-- Add to Cart Button -->
+<!-- Add to Cart Button -->
             <div class="add-to-cart">
-              <button id="add-to-cart-button">Add to Cart</button>
+                <button id="add-to-cart-button">Add to Cart</button>
             </div>
-          </aside>
-        </main>
-           
-           <!--Animation container-->
+            </aside>
+<!-- Cart Section -->
+            <div class="cart-container" id="cart-container">
+                <div class="cart-header">
+                    <h2>Review Your Cart</h2>
+                    <button class="close-cart" id="close-cart">&times;</button>
+                </div>
+                <div class="cart-items">
+        <!-- Cart items will be dynamically inserted here -->
+            </div>
+                <div class="cart-footer">
+                 <div class="cart-subtotal">
+                    <p>Subtotal:</p>
+                    <span id="subtotal">$0.00</span>
+                </div>
+                    <button id="checkout-button">Checkout</button>
+            </div>
+            </div>
+
+       <!--Animation container-->
         <div id="outer">
             <div id="animation-container">
                 <img id="fake-image" alt="placeholder-image">
             </div>
-        </div> 
-<!--Left Side Bar-->
-
-    <!--Main Content-->
-<!--     
-        <section id="product">
-            <div class="duck-container">
-                <img id="duckImage" src="duck.png" alt="Rubber Duck">
-                <div class="color-chooser">
-                    <label for="color">Choose Duck Color:</label>
-                    <select id="color">
-                        <option value="yellow">Yellow</option>
-                        <option value="blue">Blue</option>
-                        <option value="red">Red</option>
-                    </select>
-                </div>
-                <h5 id=price>$1,000,000</h5>
-                <button id="addToCart">Add to Cart</button>
-            </div>
-            
-        </section> -->
+        </div>
+       
 
         <section id="info">
             <h2>Talk to the Duck</h2>
             <p>Placeholder Text- Open your mind</p>
             <div id="duckPopUp">
-                <img src="duck_head.png" alt="Duck Head">
+                <img id="duck-head" src="./ImagesTemp/DuckLogo.png" alt="Duck Head">
             </div>
         </section>
     </main>
 
-        <!--Contact Info-->
-        <footer id="contact">
-            <h3>Connect</h3>
-                <ul id="socialmedia">
-                    <li id="insta"><a href="#" id="insta-link">Instagram</a></li>
-                    <li id="twitter"><a href="#" id="twitter-link">Twitter</a></li>
-                </ul>
-            <h5 id="footer-tag">© Ducks 2024</h5>
-            <!-- <form>
-                <input type="text" placeholder="Your Name">
-                <input type="email" placeholder="Your Email">
-                <textarea placeholder="Your Message"></textarea>
-                <button type="submit">Submit</button>
-            </form> -->
-        </footer>
-
-        <!-- Sign In
-        <div id="signInModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2>Sign In</h2>
-                <form id="signInForm">
-                    <input type="text" placeholder="Username" required>
-                    <input type="password" placeholder="Password" required>
-                    <button type="submit">Sign In</button>
-                </form>
-            </div>
-        </div>
-
-        Cart
-        <div id="cartModal" class="modal"></div>
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Your Cart</h2>
-            <div id="cartItems">
-                <p>Your cart is empty.</p>
-            </div>
-        </div>
-        </div> -->
+    <!--Contact Info-->
+    <footer id="contact">
+        <h3>Connect</h3>
+        <ul id="socialmedia">
+            <li id="insta"><a href="#" id="insta-link">Instagram</a></li>
+            <li id="twitter"><a href="#" id="twitter-link">Twitter</a></li>
+        </ul>
+        <h5 id="footer-tag">© Ducks 2024</h5>
+        
+    </footer>
 
 
 </body>
