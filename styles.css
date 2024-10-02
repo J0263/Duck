@@ -238,3 +238,58 @@ footer {
     /* right: 400px; */
    
 }
+.product-info {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #F9F9F9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    /* Position it fixed on the right side */
+    position: fixed;
+    top: 50%;
+    right: -250px; /* Initially hidden off-screen */
+    transform: translateY(-50%);
+    /* Add transition for smooth slide-in effect */
+    transition: right 0.3s ease;
+    /* Initially hidden when not hovered over */
+    opacity: 0;
+   }
+   /* Show the aside when hovered */
+   .product-info:hover {
+    right: 20px; /* Moves it to be visible on the screen */
+    opacity: 1; /* Fully visible */
+   }
+   /* Price styling */
+   .product-price p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+   }
+   /* Color selection section */
+   .product-colors {
+    margin-bottom: 20px;
+   }
+   .product-colors p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+   }
+   .product-colors label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+   }
+   /* Input radio buttons for color selection */
+   .product-colors input[type="radio"] {
+    margin-right: 10px;
+   }
+   /* Product description styling */
+   .product-description p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+   }
