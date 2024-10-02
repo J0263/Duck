@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <title>Duck</title>
-    <script rel="stylesheet" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
- 
+
 
     <!--Modal Popup-->
     <!-- Button trigger modal -->
@@ -39,8 +38,8 @@
         </div>
     </div>
 
-    <!--Header Nav-->
-    <header>
+    <!--Header Nav (Seth and Jorge)-->
+    <!-- <header>
         <nav>
             <div class="logo">
                 <img src="./images/ducklogo.png" alt="duck logo" />
@@ -54,7 +53,7 @@
             <li><a href="#" id="sign-in-btn">Sign In</a></li>
         </ul>
         </nav>
-    </header>
+    </header> -->
 
     <!--Left Sidebar for Duck Gifs-->
 
@@ -67,9 +66,50 @@
             <img src="#" alt="duck head">
         </div>
     </aside> -->
-
-
-
+    <!--Header (Nav Jacks)-->
+    
+        <header class="top-header">
+            <div class="top-header-content">
+                <span class="newsletter-offer">
+                    <a href="#" class="newsletter-link">Sign up for our newsletter for 0.01% off!</a>
+                </span>
+                <div class="right-section">
+                    <label class="switch">
+                        <input type="checkbox" id="theme-switch">
+                        <span class="slider round"></span>
+                    </label>
+                    <a href="#" class="sign-in-link">Sign In</a>
+                </div>
+            </div>
+        </header>
+        <header>
+            <nav>
+                <div class="main-nav">
+                    <span class="logo-container">
+                        <a href="#">
+                            <img src="../Duck Test/ImagesTemp/DuckLogo.png" alt="Logo" class="logo">
+                        </a>
+                    </span>
+                    <div class="shopping-cart-container">
+                        <a href="/path_to_your_cart_page">
+                            <img src="../Duck Test/ImagesTemp/ShoppingCart.png" alt="Shopping Cart" class="shopping-cart-icon">
+                        </a>
+                    </div>
+                    <span class="dropdown">
+                        <a href="#">Products</a>
+                        <div class="dropdown-content">
+                            <span class="product-category">
+                                <a href="#">Ducks</a>
+                                <div class="sub-dropdown">
+                                    <span><a href="#">Duck Product</a></span>
+                                </div>
+                            </span>
+                        </div>
+                    </span>
+                </div>
+            </nav>
+        </header>
+ 
     <!--Hero-->
     <main id="mainContent">
         <section class="hero">
@@ -89,30 +129,37 @@
             </aside>
             
         </section>
+        
         <main aside class="product-info">
             <div class="product-price">
-                <p>Price: $49.99</p>
+              <p>Price: $49.99</p>
             </div>
             <div class="product-colors">
-                <p>Select Color:</p>
-             <label>
-                <input type="radio" name="color" value="red"> Red
-             </label>
-             <label>
-                <input type="radio" name="color" value="blue"> Blue
-             </label>
-             <label>
-                <input type="radio" name="color" value="green"> Green
-             </label>
-             <label>
-                <input type="radio" name="color" value="yellow"> Yellow
-             </label>
+              <p>Select Color:</p>
+              <select name="color" id="color-select">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+              </select>
             </div>
             <div class="product-description">
-             <p>This is a brief description of the product. It's a great choice for anyone looking for quality and style.</p>
+              <p>This is a brief description of the product. It's a great choice for anyone looking for quality and style.</p>
             </div>
-           </aside>
-           </main>
+            <!-- Add to Cart Button -->
+            <div class="add-to-cart">
+              <button id="add-to-cart-button">Add to Cart</button>
+            </div>
+          </aside>
+        </main>
+           
+           <!--Animation container-->
+        <div id="outer">
+            <div id="animation-container">
+                <img id="fake-image" alt="placeholder-image">
+            </div>
+        </div> 
+<!--Left Side Bar-->
 
     <!--Main Content-->
 <!--     
