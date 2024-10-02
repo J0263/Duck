@@ -315,7 +315,7 @@ footer {
     width: 30%;
     height: 100vh;
     position: fixed;
-    top: 0;
+    top: 152px;
     right: 0;
     background-color: white;
     display: flex;
@@ -324,6 +324,7 @@ footer {
     z-index: 1000;
     box-shadow: -2px, 0, 5px, #0000;
     transition: transform 0.3s ease;
+    border: 2px, solid, #444;
 }
 .cart-container.hide {
     transform: translateX(100%); /* Slide the cart out of view */
@@ -389,6 +390,19 @@ cart-item-info {
 .cart-subtotal {
     font-size: 18px;
     font-weight: bold;
+}
+.remove-from-cart {
+    background-color: red;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+.remove-from-cart:hover {
+    background-color: gold;
 }
 .top-header {
     background-color: #555;
@@ -580,4 +594,8 @@ nav {
 }
 .login-container {
     margin-right: 30px;
+}
+#duck-head{
+    height: 60px;
+    width: 60px;
 }
