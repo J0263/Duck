@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Duck</title>
-    <script defer src="./script.js"></script>
+    <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
+    <script defer src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
-
+</head>
 <body>
-<!--Header (Nav Jacks)-->
     <header class="top-header">
         <div class="top-header-content">
             <span class="newsletter-offer">
@@ -31,12 +30,12 @@
             <div class="main-nav">
                 <span class="logo-container">
                     <a href="#">
-                        <img src="./ImagesTemp/DuckLogo.png" alt="Black Duck logo" class="logo">
+                        <img src="./images/DuckLogo.png" alt="Logo" class="logo">
                     </a>
                 </span>
                 <div class="shopping-cart-container">
                     <a href="/path_to_your_cart_page">
-                        <img src="./ImagesTemp/ShoppingCart.png" alt="Shopping cart logo"
+                        <img src="./images/ShoppingCart.png" alt="Shopping Cart"
                             class="shopping-cart-icon">
                     </a>
                 </div>
@@ -54,84 +53,89 @@
             </div>
         </nav>
     </header>
-
-<!--Hero-->
-    <main id="mainContent">
-        <section class="hero">
-            <div class="hero-content">
-                <div class="hero-pic">
-                    <img src="./images/ducklogo.png" alt="Black logo of our Duck">
-                </div>
-            </div>
-        </section>
-
-<!-- Product Details Section with Add to Cart Button -->
-        <aside class="product-info">
-            <div class="product-price">
-                <p>Price: $49.99</p>
-            </div>
-            <div class="product-colors">
-                <p>Select Color:</p>
-                    <select name="color" id="color-select">
-                        <option value="red">Red</option>
-                        <option value="blue">Blue</option>
-                        <option value="green">Green</option>
-                        <option value="yellow">Yellow</option>
-                    </select>
-            </div>
-            <div class="product-description">
-                <p>Meet Duck, your favorite bath-time buddy!  Every bath deserves a buddy that floats. Duck comes in a variety of colors to guarantee the bath we all deserve. Get ready for the best floating toy you will ever experience!</p>
-            </div>
-<!-- Add to Cart Button -->
-            <div class="add-to-cart">
-                <button id="add-to-cart-button">Add to Cart</button>
-            </div>
-        </aside>
-<!-- Cart Section -->
-            <div class="cart-container" id="cart-container">
-                <div class="cart-header">
-                    <h2>Review Your Cart</h2>
-                        <button class="close-cart" id="close-cart">&times;</button>
-                </div>
-                <div class="cart-items">
-<!-- Cart items will be dynamically inserted here -->
-            </div>
-                <div class="cart-footer">
-                    <div class="cart-subtotal">
-                        <p>Subtotal:</p>
-                            <span id="subtotal">$0.00</span>
-                    </div>
-                        <button id="checkout-button">Checkout</button>
-                </div>
-            </div>
-
-<!--Animation container-->
-        <div id="outer">
-            <div id="animation-container">
-                <img id="fake-image" alt="placeholder-image">
-            </div>
-        </div>
-       
-
-        <section id="info">
-            <h2>Talk to the Duck</h2>
-                <p>Placeholder Text- Open your mind</p>
-            <div id="duckPopUp">
-                <img id="duck-head" src="./ImagesTemp/DuckLogo.png" alt="Black logo of our Duck">
-            </div>
-        </section>
-    </main>
-
-<!--Contact Info-->
-    <footer id="contact">
-        <h3 id="connect">Connect</h3>
-        <ul id="socialmedia">
-            <li id="insta"><a href="#" id="insta-link">Instagram</a></li>
-            <li id="twitter"><a href="#" id="twitter-link">Twitter</a></li>
-        </ul>
-        <h5 id="footer-tag">© Ducks 2024</h5>
-        
-    </footer>
-
 </body>
+<body>
+    <div class="container">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <img class="swiper-slide slide_1" src="./images/DuckProductMAIN.png">
+                <img class="swiper-slide slide_1" src="./images/YellowDuckProduct.jpeg">
+                <img class="swiper-slide slide_1" src="./images/BlueDuckProduct.jpeg">
+                <img class="swiper-slide slide_1" src="./images/PinkDuckProduct.jpg">
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</body>
+<body>
+    <aside class="product-info">
+        <div class="product-price">
+            <p>Price: $49.99</p>
+        </div>
+        <div class="product-colors">
+            <p>Select Color:</p>
+            <select name="color" id="color-select">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+            </select>
+        </div>
+        <div class="product-description">
+            <p>Meet Duck, your favorite bath-time buddy! Every bath deserves a buddy that floats. Duck comes in a
+                variety of colors to guarantee the bath we all deserve. Get ready for the best floating toy you will
+                ever experience!</p>
+        </div>
+        <!-- Add to Cart Button   NOT JACK     -->
+        <div class="add-to-cart">
+            <button id="add-to-cart-button">Add to Cart</button>
+        </div>
+    </aside>
+    <!-- Cart Section -->
+    <div class="cart-container">
+        <div class="cart-header">
+            <h2>Review Your Cart</h2>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be dynamically inserted here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-subtotal">
+                <p>Subtotal:</p>
+                <span id="subtotal">$0.00</span>
+            </div>
+            <button id="checkout-button">Checkout</button>
+        </div>
+    </div>
+</body>
+<body>
+    <div id="outer">
+        <div id="animation-container">
+            <img id="fake-image" src="DuckAnimation/DuckAnimation1.webp" alt="DuckAnimation">
+        </div>
+    </div>
+</body>
+<section class="duckyinfo">
+    <div class="text-content">
+        <h2>
+            Product Info
+        </h2>
+        <h3>
+            Did you know that talking through your code with a rubber duck can help you solve tricky bugs faster? The
+            Rubber Ducky Debugging method is a simple yet effective technique where explaining your problem aloud (even
+            to a duck!) helps you find errors you might have missed. Our rubber ducks are the perfect silent companion
+            for every coder, making debugging more fun and productive. Get yours today and watch the bugs disappear!
+        </h3>
+    </div>
+    <img src="./images/duckgif.webp" alt="Rubber Duck Gif" class="duck-gif">
+</section>
+<footer id="contact">
+    <h3 id="connect">Connect</h3>
+    <ul id="socialmedia">
+        <li id="insta"><a href="#" id="insta-link">Instagram</a></li>
+        <li id="twitter"><a href="#" id="twitter-link">Twitter</a></li>
+    </ul>
+    <h5 id="footer-tag">© Ducks 2024</h5>
+</footer>
 </html>
