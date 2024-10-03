@@ -311,6 +311,7 @@ footer {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
+    margin-top: 15px;
   }
   #add-to-cart-button:hover {
     background-color: #0056B3;

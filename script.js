@@ -87,3 +87,11 @@ function removeFromCart(event) {
     cart.splice(itemIndex, 1);
     renderCart();
 }
+document.addEventListener('DOMContentLoaded', function() {
+    const options = {};
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, options);
+    
+    const modalLink = document.querySelector("#click-modal");
+    modalLink.click();
+  });
