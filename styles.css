@@ -209,7 +209,7 @@ img {
 }
 
 footer {
-    background-color: lightblue;
+    background-color: #555;
     padding: 50px;
     text-align: center;
 
@@ -218,18 +218,18 @@ footer {
 #insta, #twitter{
     list-style: none;
     text-align: center;
-    color: black;
+    color: white;
     
 }
 
 #insta-link, #twitter-link {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 #footer-tag {
     text-align: left;
     text-indent: 0px;
-    color: black;
+    color: white;
 }
 #product {
     position: relative;
