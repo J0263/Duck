@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 
@@ -12,11 +13,13 @@ body {
     background-color: white;
     color: red;
 }
-
-h1, h2 {
-    color: yellow;
+#connect {
+    color: gold;
+    font-size: 30px;
 }
-
+h1, h2 {
+    color: gold;
+}
 
 .logo {
     display: inline-block;
@@ -215,17 +218,18 @@ footer {
 #insta, #twitter{
     list-style: none;
     text-align: center;
+    color: black;
     
 }
 
 #insta-link, #twitter-link {
     text-decoration: none;
-    color: red;
+    color: black;
 }
 #footer-tag {
     text-align: left;
     text-indent: 0px;
-    color: white;
+    color: black;
 }
 #product {
     position: relative;
